@@ -26,7 +26,21 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    printf("Integer literal: %d, Size = %zu bytes\n", 10, sizeof(10));
+    printf("Float literal: %f, Size = %zu bytes\n", 3.14f, sizeof(3.14f));
+    printf("Character literal: %c, Size = %zu bytes\n", 'A', sizeof('A'));
+    printf("String literal: %s, Size = %zu bytes\n", "Hello C", sizeof("Hello C"));
+
+    return 0;
+}
+```
 # Output:
+<img width="527" height="302" alt="517193839-b604fbc4-78f4-4a72-bc0c-a413e7c7e134" src="https://github.com/user-attachments/assets/234c7df3-5236-406d-9437-46cc16d7cdaf" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +71,24 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+#define PI 3.14159  
+
+int main() {
+    const int DAYS = 7;  
+
+    printf("Value of macro constant PI: %f\n", PI);
+    printf("Value of constant variable DAYS: %d\n", DAYS);
+
+    return 0;
+}
+```
 # Output:
+
+<img width="517" height="277" alt="517194102-7f754609-f149-4835-b013-2a85dc250891" src="https://github.com/user-attachments/assets/6624527c-9357-4082-8419-c52169dc3f67" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +112,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int age = 20;
+    float height = 5.8f;
+    double distance = 12345.6789;
+    char grade = 'A';
+
+    printf("Integer value (age): %d\n", age);
+    printf("Float value (height): %f\n", height);
+    printf("Double value (distance): %lf\n", distance);
+    printf("Character value (grade): %c\n", grade);
+
+    return 0;
+}
+```
 # Output:
+<img width="542" height="321" alt="517194407-bfcb88a7-ad73-451b-a3ec-f2912bc8b7bc" src="https://github.com/user-attachments/assets/77331859-8c82-4360-a5f7-4e284e97d298" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +170,37 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("\n--- Arithmetic Operations ---\n");
+    printf("Sum (a + b): %d\n", a + b);
+    printf("Difference (a - b): %d\n", a - b);
+    printf("Product (a * b): %d\n", a * b);
+    printf("Quotient (a / b): %d\n", a / b);
+    printf("Remainder (a %% b): %d\n", a % b);
+
+    printf("\n--- Bitwise Operations ---\n");
+    printf("AND (a & b): %d\n", a & b);
+    printf("OR (a | b): %d\n", a | b);
+    printf("XOR (a ^ b): %d\n", a ^ b);
+    printf("Left shift (a << b): %d\n", a << b);
+    printf("Right shift (a >> b): %d\n", a >> b);
+    printf("Bitwise NOT of a (~a): %d\n", ~a);
+    printf("Bitwise NOT of b (~b): %d\n", ~b);
+
+    return 0;
+}
+```
 # Output:
+<img width="635" height="542" alt="517195177-3e39f116-0013-4722-b47d-072dadb5d754" src="https://github.com/user-attachments/assets/dad6578d-f2be-4a05-aad6-18d6cd924069" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +245,29 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch >= '0' && ch <= '9') ? printf("Digit\n") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+          ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+            ? printf("Vowel\n")
+            : printf("Consonant\n"))
+        : printf("Special Symbol\n");
+
+    return 0;
+}
+```
 # Output:
+<img width="563" height="305" alt="517195495-0fe07465-8174-4520-b284-72a20e7c8a73" src="https://github.com/user-attachments/assets/ee36bb3c-2514-4657-8f78-6df05105d439" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
